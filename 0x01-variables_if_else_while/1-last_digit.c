@@ -3,10 +3,10 @@
 #include <stdio.h>
 
 /**
- * main - (print last digit of random number stored in variable n)
+ * main - print last digit of random number stored in variable n
  * Return: Always 0 (Success)
  */
-int main:(void)
+int main(void)
 {
 	int n;
 
