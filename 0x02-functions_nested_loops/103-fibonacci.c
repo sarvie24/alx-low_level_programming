@@ -22,7 +22,7 @@ int main(void)
 		}
 		next = j + k;
 		j = k;
-		k = neii
+		k = next;
 	}
 
 	printf("%lu\n", sum);
