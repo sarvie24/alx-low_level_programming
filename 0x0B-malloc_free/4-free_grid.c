@@ -4,7 +4,7 @@
 
 /**
  * free_grid - frees 2d array
- * @grid: 2d grid
+ * @grid: 2d grid ‘=’, ‘,’, ‘;’, ‘asm’ or ‘:’
  * @height: height dimension of grid
  * description: frees memory of grid
  * Return: nothing
@@ -20,4 +20,4 @@ free(grid[i]);
 }
 free(grid);
 }
-Return: nothing
+Return()
