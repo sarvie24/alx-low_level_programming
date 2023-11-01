@@ -8,7 +8,8 @@
  * Return: number of letter printed
  */
 
-ssize_t read_textfile(const char *filename, size_t letters);
+ssize_t read_textfile(const char *filename, size_t letters)
+
 {
 	int fd;
 	ssize_t nrd, nwr;
@@ -22,14 +23,15 @@ ssize_t read_textfile(const char *filename, size_t letters);
 	if (fd == -1)
 		return (0);
 
-	buff = malloc(sizeof(char) * letter);
+	buff = malloc(sizeof(char) * letters);
 	if (buff == NULL)
+
 		return (0);
 
 	nrd = read(fd, buff, letters);
 	nwr = write(STDOUT_FILENO, buff, nrd);
 
-	close(fd);
+	close (fd);
 	free(buff);
 
 	return (nwr);
