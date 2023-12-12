@@ -1,11 +1,16 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <ctype.h>
-#include <string.h>
 
-int _putchar(char c)
+/**
+ *_islower - checks for a lowercase character
+ *@c: letter being tested
+ * Return: Always 0
+ */
+
+int _islower(int c)
 {
-    return putchar(c);
-}
+	if  (c >= 97 && c <= 122)
+		return (1);
+	else
+		return (0);
 
+}
